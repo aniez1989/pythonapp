@@ -1,6 +1,6 @@
 deployment:
   name: python-app-deployment
-  replicas: 3
+  replicas: 5
   selector:
     app: python-app
   container:
@@ -8,7 +8,7 @@ deployment:
     port: 8080
 image:
   repository: aniez1989/pythonapp
-  tag: v2
+  tag: v1
 
 service:
   name: python-app-service
