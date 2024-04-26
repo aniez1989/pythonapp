@@ -1,6 +1,6 @@
 deployment:
   name: python-app-deployment
-  replicas: 1
+  replicas: 3
   selector:
     app: python-app
   container:
