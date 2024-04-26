@@ -5,7 +5,7 @@ pipeline {
     }
 
     environment {
-        registry= "queeki/pythonapp"
+        registry= "aniez1989/pythonapp"
         AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_KEY')
         AWS_DEFAULT_REGION = "us-east-1"
@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Git Checkout'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/pankajdevops2489/python-jenkins-terraform.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/aniez1989/pythonapp.git']])
             }
         }
         stage('Initalizing Terraform code'){

@@ -7,7 +7,7 @@ deployment:
     name: python-app
     port: 8080
 image:
-  repository: queeki/pythonapp
+  repository: aniez1989/pythonapp
   tag: v2
 
 service:
